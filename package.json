@@ -1,0 +1,68 @@
+{
+  "name": "react-mchine",
+  "version": "0.1.0",
+  "description": "React component for mchine library",
+  "main": "dist/react-mchine.js",
+  "module": "dist/react-mchine.m.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "prepublish": "yarn build",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "state-machine",
+    "mchine",
+    "state"
+  ],
+  "author": "Henrique Limas (https://github.com/HenriqueLimas)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-annotate-pure-calls": "^0.3.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-idx": "^2.4.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.14",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.4.4",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "idx": "^2.4.0",
+    "jest": "^23.5.0",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-test-renderer": "^16.4.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.64.1",
+    "rollup-plugin-babel": "^3.0.7"
+  },
+  "peerDependencies": {
+    "react": ">=16.4"
+  },
+  "lint-staged": {
+    "lib/**/*.js": [
+      "eslint lib/ --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
+}
