@@ -10,7 +10,8 @@
 
   "rules": {
     "import/no-self-import": "error",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": false , "optionalDependencies": false }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true , "optionalDependencies": false }],
+    "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": "off"
   }
 }
