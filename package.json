@@ -7,8 +7,9 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
-    "prepublish": "yarn build",
+    "prepublish": "npm run build",
     "precommit": "lint-staged",
+    "release": "npm t && git commit -am \"$npm_package_version 🚀\" && git tag $npm_package_version && git push && git push --tags && npm publish",
     "test": "jest"
   },
   "keywords": [
