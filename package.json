@@ -1,6 +1,6 @@
 {
   "name": "react-mchine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component for mchine library",
   "main": "dist/react-mchine.js",
   "module": "dist/react-mchine.m.js",
