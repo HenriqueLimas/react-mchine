@@ -88,7 +88,7 @@ Inside your Wrapped component now you can use the `<State />` component to match
 
 ```js
 ...
-import { withMchine, State } from 'mchine';
+import { withMchine, State } from 'react-mchine';
 
 class Component extends React.Component {
   ...
